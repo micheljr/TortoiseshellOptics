@@ -1,0 +1,233 @@
+html {
+	font-family: Helvetica;
+	font-size: 18px;
+	line-height: 1.4;
+}
+.container {
+	width: 960px;
+}
+header {
+	display: flex;
+	justify-content: center;
+	height: 30rem;
+	background-image: url("../images/glasses-bg.png");
+	background-size: auto 30rem;
+	background-repeat: no-repeat;
+
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	background-color: cadetblue;
+	align-items: center;
+	margin-top: 1rem;
+}
+.logo {
+	display: flex;
+	align-items: center;
+	width: 50%;
+}
+.logo img {
+	margin:0 1rem 0 2rem;
+	height: 1.5rem;
+}
+.logo p {
+	color: white;
+}
+.widenav, .narrownav {
+	margin:1rem 2rem 1rem 0;
+}
+.widenav a, .narrownav a {
+	margin:0 1rem 0 1rem;
+	color: white;
+	text-decoration: none;
+}
+.narrownav {
+	display: none;
+}
+.textcontainer {
+	margin-top: 10rem;
+	width: 996px;
+	display: flex;
+	justify-content: flex-end;
+}
+.headertext {
+	padding: 1.5rem 5rem 1.5rem 5rem;
+	background-color: white;
+	font-size: 2rem;
+	font-weight: bold;
+	line-height: 1.2;
+}
+
+.content {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin: 3rem 0 5rem 0;
+}
+.pictograms {
+	display: flex;
+	justify-content: center;
+}
+.paper-icon, .ruler-icon, .truck-icon {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	margin:0 3rem 3rem 3rem;
+	height: 8rem;
+	width: 3.5rem;
+	text-align: center;
+}
+.paper-icon img {
+	width: 3.5rem;
+	height: auto;
+}
+.ruler-icon img, .truck-icon img {
+	width: 5rem;
+}
+.text {
+	display: flex;
+	justify-content: center;
+
+}
+.philosophy, .appointments {
+	width: 35%;
+}
+.philosophy {
+	margin-right: 5%;
+}
+.title {
+	background-color: cadetblue;
+	padding: 0.5rem 0 0.5rem 1.25rem;
+	color: white;
+	margin-bottom: 1rem;
+	width: 10rem;
+	font-weight: bold;
+}
+footer {
+	display: flex;
+	justify-content: center;
+}
+.footer {
+	display: flex;
+	align-items: center;
+	padding: 4rem 0 4rem 4rem;
+	background-color: azure;
+}
+.footer img {
+	height: 1.5rem;
+	margin-right: 1rem;
+}
+
+
+@media only screen and (max-width: 1024px){
+	.container {
+		width: 100%;
+	}
+	header {
+		height: 22rem;
+		background-size: auto 22rem;
+		background-position: 50%;
+	}
+	.textcontainer {
+		width: 100%;
+		margin-top: 5rem;
+	}
+	.headertext {
+		padding:0.75rem 4rem 0.75rem 4rem;
+		margin-right: 2rem;
+	}
+	.navbar {
+		margin-top: 0;
+	}
+}
+@media only screen and (max-width: 730px) {
+	.narrownav {
+		display: flex;
+		justify-content: space-between;
+	}
+	.widenav {
+		display: none;
+	}
+}
+@media only screen and (max-width: 650px) {
+	header {
+		background-position: 20%;
+		height: 17rem;
+		background-size: auto 17rem;
+	}
+	.container {
+		width: 100%;
+	}
+	.textcontainer {
+		margin-top: 9rem;
+		width: 100%
+	}
+	.headertext {
+		width: 100%;
+		margin:0;
+		font-size: 1rem;
+	}
+
+	.narrownav {
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.widenav {
+		display: none;
+	}
+	.pictograms {
+		flex-direction: column;
+		align-items: center;
+	}
+	.pictograms p {
+		font-size: 0.77rem;
+	}
+	.content {
+		width: 100%;
+		margin: 3.77rem 0 3.77rem 0;
+	}
+	.paper-icon, .ruler-icon, .truck-icon {
+		height: 6rem;
+		width: 5rem;
+		text-align: center;
+	}
+	.ruler-icon, .truck-icon {
+		margin-top: 1.54rem;
+	}
+	.logo p {
+		display: none;
+	}
+	.text {
+		flex-direction: column;
+	}
+	.philosophy, .appointments {
+		width: 100%;
+		font-size: 0.77rem;
+		
+	}
+	.title {
+		width: 95.5%;
+	}
+	.philosophy {
+		margin:0 0 4rem 0; 
+	}
+	
+	footer {
+		width: 100%;
+	}
+	.footer p {
+		display: none;
+	}
+	.footer {
+		width: 85.5%;
+		justify-content: center;
+	}
+	
+
+
+
+
